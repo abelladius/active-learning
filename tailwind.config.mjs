@@ -2,7 +2,13 @@
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {},
+		extend: {
+			colors:{
+				'albastru': '#286390',
+				'rosu': '#d21309',
+				'negru': '#222'
+			}
+		},
 	},
 	plugins: [require("daisyui")],
 }
