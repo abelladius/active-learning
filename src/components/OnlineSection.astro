@@ -1,0 +1,31 @@
+---
+import SectionPicture from "../assets/stock-online.webp";
+import { Image } from "astro:assets";
+---
+
+<section class="online-section max-w-6xl mx-auto py-4">
+  <div
+    class="container flex flex-col md:flex-row items-center justify-around gap-8 py-8"
+  >
+    <div class="online-visual overflow-hidden max-w-xs lg:max-w-none">
+      <Image src={SectionPicture} alt="sectiune online" />
+    </div>
+
+    <div class="online-text text-center md:text-left">
+      <h2 class="text-3xl font-bold text-albastru mb-2">
+        Intram in lumea virtuala!
+      </h2>
+      <p class="mb-4">
+        De 20 de ani, mai mult de 12.000 de cursanti au beneficiat de cursurile
+        Active Learning si si-au imbunatatit viata profesionala, academica sau
+        personala. Acum Active Learning doreste sa faca un pas inainte si sa
+        intre in lumea virtuala.
+      </p>
+      <a
+        href="cursuri/cursuri-fizice-si-online"
+        class="bg-albastru hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+        >Afla mai multe!</a
+      >
+    </div>
+  </div>
+</section>
