@@ -1,4 +1,5 @@
 ---
+import CarouselSection from "../components/CarouselSection/CarouselSection";
 import FeatureSection from "../components/FeatureSection.astro";
 import HeroSection from "../components/HeroSection.astro";
 import OnlineSection from "../components/OnlineSection.astro";
@@ -13,4 +14,9 @@ import Layout from "../layouts/Layout.astro";
   <FeatureSection />
   <OnlineSection />
   <ProfesorSection />
+  <CarouselSection client:load />
 </Layout>
+
+<!-- Carousel @TODO -->
+
+<!-- https://medium.com/@mkmanish2598/guide-to-creating-a-youtube-instagram-slider-or-a-video-carousel-in-react-using-videojs-and-dbbc181ebc8c -->
