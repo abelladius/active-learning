@@ -1,0 +1,310 @@
+---
+import CompanyList from "../components/CompanyList";
+import Layout from "../layouts/Layout.astro";
+
+const companies = [
+  "Alcatel-Lucent Romania",
+  "Artifino Sistem",
+  "Artima",
+  "Axxom",
+  "Azur",
+  "Banca Italo-Romena",
+  "BASF",
+  "BCR",
+  "Beenear",
+  "BNR",
+  "Bosch Communications",
+  "Business Tour&Travel",
+  "Centrocelle",
+  "Clagi Romania",
+  "Coca-Cola HBC Romania",
+  "Codognotto",
+  "Cons Electrificarea Instal",
+  "Contitech",
+  "Distrigaz Nord",
+  "Edy International Expedition",
+  "Elbromplast",
+  "ENEL",
+  "ESSER",
+  "Eurocooper",
+  "Euroholding",
+  "Finanz Bank",
+  "Fornetti Romania",
+  "Frigoglass Romania",
+  "Garda Financiară Timișoara",
+  "Glissando",
+  "Hella",
+  "Holcim",
+  "Hotel Boavista",
+  "Institutul Roman de Educatie a Adultilor din Timisoara",
+  "Incontro",
+  "ING Bank",
+  "Intercolor",
+  "International Airport Timisoara",
+  "Leman Industrie",
+  "MAHLE",
+  "Maerz Ofenbau",
+  "MGI Coutier",
+  "Niplood",
+  "Opera Romana Timisoara",
+  "Orkla Foods Romania",
+  "Peco",
+  "Petrom",
+  "Quadrant-Amroq Beverages",
+  "R.A.T.T",
+  "Ravitex",
+  "real, -Hypermarket Romania",
+  "Rios Ingenieria y Construcción",
+  "Salomon Romania",
+  "SSI Schaefer Romania",
+  "Transelectrica",
+  "TRW Automotive Safety Sistems",
+  "Ultramarin",
+  "Valeo Lighting",
+  "Walter Austria",
+  "Zoppas Industries",
+];
+---
+
+<Layout title="Portofoliu | Active Learning Timisoara">
+  <section id="portfolio">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+      <div class="mb-4">
+        <div
+          class="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12"
+        >
+          <h2
+            class="font-heading mb-4 font-bold tracking-tight text-gray-900 text-3xl sm:text-5xl"
+          >
+            Portofoliu
+          </h2>
+          <p class="mx-auto mt-4 max-w-3xl text-xl text-gray-600">
+            Ne mândrim cu faptul că peste 60 de companii din Timișoara și din
+            întreaga lume au încredințat pregătirea cadrelor lor în domeniul
+            limbilor străine. Iată câteva dintre acestea:
+          </p>
+        </div>
+      </div>
+
+      <CompanyList companies={companies} />
+
+      <div
+        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"
+      >
+        <!-- Lista de companii -->
+        <!-- <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">
+            Alcatel-Lucent Romania
+          </h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Artifino Sistem</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Artima</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Axxom</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Azur</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Banca Italo-Romena</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">BASF</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">BCR</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Beenear</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">BNR</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">
+            Bosch Communications
+          </h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">
+            Business Tour&Travel
+          </h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Centrocelle</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Clagi Romania</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">
+            Coca-Cola HBC Romania
+          </h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Codognotto</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">
+            Cons Electrificarea Instal
+          </h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Contitech</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Distrigaz Nord</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">
+            Edy International Expedition
+          </h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Elbromplast</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">ENEL</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">ESSER</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Eurocooper</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Euroholding</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Finanz Bank</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Fornetti Romania</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Frigoglass Romania</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">
+            Garda Financiară Timișoara
+          </h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Glissando</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Hella</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Holcim</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Hotel Boavista</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">
+            Institutul Roman de Educatie a Adultilor din Timisoara
+          </h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Incontro</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">ING Bank</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Intercolor</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">
+            International Airport Timisoara
+          </h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Leman Industrie</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">MAHLE</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Maerz Ofenbau</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">MGI Coutier</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Niplood</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">
+            Opera Romana Timisoara
+          </h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Orkla Foods Romania</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Peco</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Petrom</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">
+            Quadrant-Amroq Beverages
+          </h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">R.A.T.T</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Ravitex</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">
+            real,- Hypermarket Romania
+          </h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">
+            Rios Ingenieria y Construcción
+          </h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Salomon Romania</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">
+            SSI Schaefer Romania
+          </h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Transelectrica</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">
+            TRW Automotive Safety Sistems
+          </h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Ultramarin</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Valeo Lighting</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Walter Austria</h3>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md">
+          <h3 class="text-lg font-medium text-gray-900">Zoppas Industries</h3>
+        </div>
+      </div>
+    </div> -->
+      </div>
+    </div>
+  </section>
+</Layout>
