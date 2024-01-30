@@ -1,6 +1,7 @@
 ---
 import SectionPicture from "../assets/stock-online.webp";
 import { Image } from "astro:assets";
+import SectionCard from "./SectionCard.astro";
 ---
 
 <section class="online-section max-w-6xl mx-auto py-4">
@@ -10,7 +11,7 @@ import { Image } from "astro:assets";
   <div
     class="container max-w-xl p-6 py-12 flex flex-col md:flex-row items-center justify-between gap-8 mx-auto space-y-24 lg:px-8 lg:max-w-7xl"
   >
-    <div class="online-text text-center md:text-left">
+    <SectionCard>
       <h2 class="text-3xl font-bold mb-2">Intram in lumea virtuala!</h2>
       <p class="mb-4">
         De 20 de ani, mai mult de 12.000 de cursanti au beneficiat de cursurile
@@ -23,7 +24,8 @@ import { Image } from "astro:assets";
         class="bg-albastru hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
         >Afla mai multe!</a
       >
-    </div>
+    </SectionCard>
+
     <div
       class="online-visual overflow-hidden max-w-xs lg:max-w-none rounded-3xl"
     >

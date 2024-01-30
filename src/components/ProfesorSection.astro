@@ -1,48 +1,54 @@
 ---
 import { Image } from "astro:assets";
 import ProfilePicture from "../assets/profesor-jorge-garrido.jpg";
+import SectionCard from "./SectionCard.astro";
 ---
 
-<section class="profesor-section flex max-w-6xl mx-auto py-4 max-md:flex-col">
+<section
+  class="profesor-section flex max-w-6xl mx-auto gap-8 py-4 max-md:flex-col"
+>
   <Image
     src={ProfilePicture}
     alt="Profesor Jorge"
     class="profile-picture rounded-lg"
   />
-  <div class="max-w-5xl flex flex-col p-8">
-    <h2 class="text-3xl font-bold mb-4">Intâlnește Profesorul</h2>
-    <p class="text-gray-700 mb-6">
-      Jorge Gonzalez este cunoscut în Timișoara ca fiind profesor de limba
-      spaniolă. Totuși, aceasta este o imagine limitată despre directorul
-      centrului Active Learning. Jorge Gonzalez este pasionat atât de învățarea
-      cât și de predarea limbilor străine.
-    </p>
+  <SectionCard>
+    <div class="max-w-5xl flex flex-col p-8">
+      <h2 class="text-3xl font-bold mb-4">Intâlnește Profesorul</h2>
+      <p class="text-gray-700 mb-6">
+        Jorge Gonzalez este cunoscut în Timișoara ca fiind profesor de limba
+        spaniolă. Totuși, aceasta este o imagine limitată despre directorul
+        centrului Active Learning. Jorge Gonzalez este pasionat atât de
+        învățarea cât și de predarea limbilor străine.
+      </p>
 
-    <div
-      tabindex="0"
-      class="collapse collapse-arrow border border-base-300 bg-base-200"
-    >
-      <div class="collapse-title text-xl font-medium text-albastru">
-        Apasa aici pentru a afla mai multe!
-      </div>
-      <div class="collapse-content">
-        <p class="text-gray-700 mb-6">
-          Este absolvent de filologie și, în plus, este absolvent al unui master
-          despre strategii de învățare, comunicare și predare a limbilor
-          străine, are studii de doctorat în exprimarea orală la nivel avansat,
-          aproape nativ, și posedă diplomă de examinator pentru nivelurile A1,
-          A2, B1, B2, C1, C2.
-        </p>
-        <p class="text-gray-700 mb-6">
-          Celor 20 de ani de experiență ca profesor li se adaugă cei peste zece
-          ani de experiență ca evaluator de examene oficiale, de la nivelul de
-          începător până la nivelul avansat. El a conceput manualele care se
-          utilizează cu succes la Active Learning de la înființarea centrului,
-          în anul 1999, și de care au beneficiat mii de cursanți, de atunci și
-          până acum.
-        </p>
+      <div
+        tabindex="0"
+        class="collapse collapse-arrow border border-base-300 bg-base-200"
+      >
+        <div class="collapse-title text-xl font-medium text-albastru">
+          Apasa aici pentru a afla mai multe!
+        </div>
+        <div class="collapse-content">
+          <p class="text-gray-700 mb-6">
+            Este absolvent de filologie și, în plus, este absolvent al unui
+            master despre strategii de învățare, comunicare și predare a
+            limbilor străine, are studii de doctorat în exprimarea orală la
+            nivel avansat, aproape nativ, și posedă diplomă de examinator pentru
+            nivelurile A1, A2, B1, B2, C1, C2.
+          </p>
+          <p class="text-gray-700 mb-6">
+            Celor 20 de ani de experiență ca profesor li se adaugă cei peste
+            zece ani de experiență ca evaluator de examene oficiale, de la
+            nivelul de începător până la nivelul avansat. El a conceput
+            manualele care se utilizează cu succes la Active Learning de la
+            înființarea centrului, în anul 1999, și de care au beneficiat mii de
+            cursanți, de atunci și până acum.
+          </p>
+        </div>
       </div>
     </div>
+
     <!-- <p class="text-gray-700 mb-6">
       Este absolvent de filologie și, în plus, este absolvent al unui master
       despre strategii de învățare, comunicare și predare a limbilor străine,
@@ -57,7 +63,7 @@ import ProfilePicture from "../assets/profesor-jorge-garrido.jpg";
       succes la Active Learning de la înființarea centrului, în anul 1999, și de
       care au beneficiat mii de cursanți, de atunci și până acum.
     </p> -->
-  </div>
+  </SectionCard>
 </section>
 
 <style>
