@@ -22,7 +22,7 @@ const CarouselSection = () => {
   return (
     <section className="max-w-full py-16 mt-16 px-40 max-md:px-8 mx-auto min-h-40 bg-albastru">
         <h2
-      className="text-4xl font-bold lg:tracking-tight xl:tracking-tighter text-gray-100 py-4 text-center"
+      className="text-4xl text-gray-100 py-4 text-center"
     >Afla cum vei putea vorbi dupa 24 de ore</h2>
     <Carousel videos={videos} />
     </section>

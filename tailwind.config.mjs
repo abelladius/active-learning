@@ -4,9 +4,9 @@ export default {
 	theme: {
 		extend: {
 			colors:{
-				'albastru': '#286390',
-				'rosu': '#d21309',
-				'negru': '#222'
+				'albastru': 'var(--albastru)',
+				'rosu': 'var(--rosu)',
+				'negru': 'var(--negru)'
 			}
 		},
 	},

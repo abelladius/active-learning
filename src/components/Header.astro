@@ -8,11 +8,11 @@ import { Image } from "astro:assets";
     <div class="mx-auto flex flex-wrap items-center justify-between">
       <a href="#" class="flex">
         <Image src={LogoNav} height={40} alt="Logo Active Learning" />
-        <span class="self-center text-xl font-semibold whitespace-nowrap"
+        <!-- <span class="self-center text-xl font-semibold whitespace-nowrap"
           ><span class="text-albastru">A</span>ctive <span class="text-rosu"
             >L</span
           >earning</span
-        >
+        > -->
       </a>
       <button
         data-collapse-toggle="mobile-menu"
@@ -51,14 +51,15 @@ import { Image } from "astro:assets";
             <a
               href="/"
               class="md:bg-transparent block pl-3 pr-4 py-2 md:text-albastru md:p-0 rounded focus:outline-none"
-              aria-current="page">Acasa</a
+              aria-current="page"
+              ><button class="btn btn-ghost">Acasa</button></a
             >
           </li>
           <li>
             <button
               id="dropdownNavbarLink"
               data-dropdown-toggle="dropdownNavbar"
-              class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 pl-3 pr-4 py-2 md:hover:text-albastru md:p-0 font-medium flex items-center justify-between w-full md:w-auto"
+              class="btn btn-ghost"
               >Cursuri <svg
                 class="w-4 h-4 ml-1"
                 fill="currentColor"
@@ -111,21 +112,21 @@ import { Image } from "astro:assets";
             <a
               href="/despre"
               class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-albastru md:p-0"
-              >Despre noi</a
+              ><button class="btn btn-ghost">Despre noi</button></a
             >
           </li>
           <li>
             <a
               href="/portofoliu"
               class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-albastru md:p-0"
-              >Portofoliu</a
+              ><button class="btn btn-ghost">Portofoliu</button></a
             >
           </li>
           <li>
             <a
               href="/contact"
               class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-albastru md:p-0"
-              >Contact</a
+              ><button class="btn btn-ghost">Contact</button></a
             >
           </li>
         </ul>
@@ -137,3 +138,9 @@ import { Image } from "astro:assets";
 <script
   src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"
 ></script>
+
+<style>
+  .btn {
+    font-weight: 500;
+  }
+</style>
